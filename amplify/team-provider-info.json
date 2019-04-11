@@ -1,0 +1,19 @@
+{
+    "smartrly": {
+        "awscloudformation": {
+            "AuthRoleName": "smartrly-20190402174704-authRole",
+            "UnauthRoleArn": "arn:aws:iam::382476240142:role/smartrly-20190402174704-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::382476240142:role/smartrly-20190402174704-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "smartrly-20190402174704-deployment",
+            "UnauthRoleName": "smartrly-20190402174704-unauthRole",
+            "StackName": "smartrly-20190402174704",
+            "StackId": "arn:aws:cloudformation:us-east-1:382476240142:stack/smartrly-20190402174704/9ebd1c00-55a1-11e9-8c89-0eb5200d39ae"
+        },
+        "categories": {
+            "auth": {
+                "cognito566450b3": {}
+            }
+        }
+    }
+}

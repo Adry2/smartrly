@@ -1,0 +1,47 @@
+<form class="form-signin" method="POST" action="#" role="form">
+    <div class="form-group">
+        <h2>Crear una Cuenta</h2>
+    </div>
+    <div *ngIf="errorMessage!=null" class="alert alert-danger">
+        {{ errorMessage }}
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="signupName">Nombre</label>
+        <input id="signupName" type="text" maxlength="50" class="form-control"
+        [(ngModel)]="registrationUser.name" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="signupFamily_name">Apellidos</label>
+      <input id="signupFamily_name" type="text" maxlength="50" class="form-control"
+             [(ngModel)]="registrationUser.family_name" [ngModelOptions]="{standalone: true}">
+  </div>
+    <div class="form-group">
+        <label class="control-label" for="signupEmail">Email</label>
+        <input id="signupEmail" type="email" maxlength="50" class="form-control"
+               [(ngModel)]="registrationUser.email" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="signupCompany">Compañia</label>
+      <input id="signupCompany" type="text" maxlength="50" class="form-control"
+      [(ngModel)]="registrationUser.company" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+    <label class="control-label" for="signupPhone_number">Numero telefonico</label>
+    <input id="signupPhone_number" type="text" maxlength="13" class="form-control"
+           [(ngModel)]="registrationUser.phone_number" [ngModelOptions]="{standalone: true}">
+</div>
+    <div class="form-group">
+        <label class="control-label" for="signupPassword">Password</label>
+        <input id="signupPassword" type="password" maxlength="25" class="form-control"
+               placeholder="at least 8 characters" length="40" [(ngModel)]="registrationUser.password"
+               [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+        <button (click)="onRegister()" id="signupSubmit" type="submit" class="btn btn-info btn-block">
+            Registrarse
+        </button>
+    </div>
+    <hr>
+    <p>¿Ya tienes cuenta? <a [routerLink]="['/home/login']"> <i class="fa fa-fw fa-lock"></i>Iniciar Sesión</a></p>
+</form>
+

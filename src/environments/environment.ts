@@ -1,16 +1,24 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
+ import 'zone.js/dist/zone-error';  // Included with Angular CLI.
 
 export const environment = {
-  production: false
-};
+    production: false,
 
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+    region: 'us-east-1',
+
+    identityPoolId: 'us-east-1:cc5241e7-6130-4040-84df-a72d6d87f953',
+    userPoolId: 'us-east-1_XWahQoFC7',
+    clientId: '49n9bsivm1h6m24omahqbi3rsd',
+
+    rekognitionBucket: 'rekognition-pics',
+    albumName: "usercontent",
+    bucketRegion: 'us-east-1',
+
+    ddbTableName: 'LoginTrail',
+
+    cognito_idp_endpoint: '',
+    cognito_identity_endpoint: '',
+    sts_endpoint: '',
+    dynamodb_endpoint: '',
+    s3_endpoint: ''
+
+};

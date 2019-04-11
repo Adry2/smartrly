@@ -1,0 +1,20 @@
+{
+    "appName": "smartrly",
+    "roleName": "pinpointLambdaRole1eae9404",
+    "cloudWatchPolicyName": "cloudWatchPolicy1eae9404",
+    "pinpointPolicyName": "pinpointPolicy1eae9404",
+    "authPolicyName": "pinpoint_amplify_1eae9404",
+    "unauthPolicyName": "pinpoint_amplify_1eae9404",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

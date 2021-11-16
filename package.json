@@ -25,7 +25,7 @@
     "angular-http-harness": "^2.0.3",
     "aws-amplify": "^1.1.23",
     "aws-amplify-angular": "^2.1.10",
-    "aws-sdk": "^2.437.0",
+    "aws-sdk": "^2.814.0",
     "cognito-express": "^2.0.14",
     "cognito-token": "^1.0.4",
     "cognito-user-pool": "^0.2.4",
